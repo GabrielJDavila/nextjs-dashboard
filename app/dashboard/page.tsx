@@ -17,7 +17,7 @@ export default async function Page() {
     // const totalPendingInvoices = (await fetchCardData()).totalPendingInvoices
     // const numberOfInvoices = (await fetchCardData()).numberOfInvoices
     // const numberOfCustomers = (await fetchCardData()).numberOfCustomers
-    
+    console.log("test")
     return (
         <main>
             <h1 className={`${lusitana.className} mb-4 text-xl md:text-2x1`}>Dashboard</h1>
