@@ -41,6 +41,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
             message: "Missing Fields. Failed to create invoice."
         }
     }
+    console.log(validatedFields)
 
     const { customerId, amount, status } = validatedFields.data
     const amountInCents = amount * 100
@@ -53,7 +54,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
         `
     } catch(err) {
         return {
-            message: "error creating invoice"
+            message: "Database Error: Failed to create invoice."
         }
     }
 
